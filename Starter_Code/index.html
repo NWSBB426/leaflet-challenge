@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,8 +14,17 @@
   <!-- Our CSS -->
   <link rel="stylesheet" type="text/css" href="static/css/style.css">
 </head>
-
 <body>
+
+  <!-- Depth Filter Controls -->
+  <div id="depthFilter">
+    <input type="radio" id="shallow" name="depth" value="shallow" checked>
+    <label for="shallow">Shallow</label><br>
+    <input type="radio" id="intermediate" name="depth" value="intermediate">
+    <label for="intermediate">Intermediate</label><br>
+    <input type="radio" id="deep" name="depth" value="deep">
+    <label for="deep">Deep</label>
+  </div>
 
   <!-- The div that holds our map -->
   <div id="map"></div>
@@ -30,5 +38,4 @@
   <!-- Our JavaScript -->
   <script type="text/javascript" src="static/js/logic.js"></script>
 </body>
-
 </html>
